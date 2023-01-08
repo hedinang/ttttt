@@ -7,7 +7,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "start": "sudo docker-compose -f docker-compose.yaml up --build",
+    "start": "docker-compose -f docker-compose.yaml up --build",
     "docker:up": "docker-compose up",
     "docker:down": "docker-compose down",
     "docker:test": "docker-compose run backend sh -c cd /app &&  npm run test",
