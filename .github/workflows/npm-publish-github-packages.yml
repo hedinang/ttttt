@@ -1,0 +1,20 @@
+name: demo
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on:
+   push:
+      branches:
+         - main
+defaults:
+   run:
+      working-directory: "/"
+
+jobs:
+   build:
+      runs-on: ubuntu-latest
+
+      steps:
+         - uses: actions/checkout@v2
+         - run: npm install --force
+         - run: npm run dev
+
+         
